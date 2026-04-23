@@ -1,0 +1,51 @@
+{
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "args": ["-NoExit", "-Command", "Write-Host '💻 Entorno listo. Ejecuta las tareas con Ctrl+Shift+P > Run Task' -ForegroundColor Green"]
+    }
+  },
+  "task.allowAutomaticTasks": "on",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/.venv": true,
+    "**/target": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.vscode/.detected-type": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.venv": true,
+    "**/target": true,
+    "**/dist": true,
+    "**/*.lock": true
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "workbench.startupEditor": "readme",
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "es5",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+  "python.terminal.activateEnvironment": true,
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "eslint.format.enable": true,
+  "docker.compose.autoStart": false,
+  "workbench.welcomePage.walkthroughs": [],
+  "extensions.autoUpdate": false,
+  "extensions.autoCheckUpdates": false
+}

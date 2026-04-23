@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    "eamodio.gitlens",
+    "usernamehw.errorlens",
+    "aaron-bond.better-comments",
+    "editorconfig.editorconfig",
+    "exodiusstudios.comment-anchors",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "ms-python.black-formatter",
+    "golang.go",
+    "rust-lang.rust-analyzer",
+    "vscjava.vscode-java-pack",
+    "ms-dotnettools.csharp",
+    "xdebug.php-debug",
+    "dart-code.flutter",
+    "ms-azuretools.vscode-docker"
+  ],
+  "unwantedRecommendations": [
+    "ms-vscode.vscode-typescript-tslint-plugin"
+  ]
+}
